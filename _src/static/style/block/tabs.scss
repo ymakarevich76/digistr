@@ -1,0 +1,30 @@
+.tabs__items {
+  display: flex;
+  width: auto;
+}
+
+.tabs__item {
+  display: inline-block;
+  padding: 14px 18px;
+
+  text-align: center;
+
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:first-child {
+    border-radius: 4px 0 0 4px;
+  }
+
+  &:last-child {
+    border-radius: 0 4px 4px 0;
+  }
+
+  &.active {
+    color: #fff;
+
+    background-color: $c-purple;
+  }
+}

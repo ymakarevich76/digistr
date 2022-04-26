@@ -1,0 +1,132 @@
+.promo-inner {
+  position: relative;
+
+  padding-top: 107px;
+  padding-bottom: 80px;
+
+  background: linear-gradient(104.28deg, $c-purple 28.76%, rgba(94, 114, 228, 0) 96.76%);
+
+  @media (max-width: $sm) {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+}
+
+.promo-inner__content {
+  position: relative;
+
+  width: 48%;
+
+  @media (max-width: $xl) {
+    width: 52%;
+  }
+
+  @media (max-width: $sm) {
+    width: 100%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -100px;
+    right: -85px;
+
+    display: block;
+    width: 162px;
+    height: 100%;
+
+    background: url("../img/bc/design-rectangle.png") no-repeat;
+    background-size: 100%;
+  }
+}
+
+.promo-inner__title {
+  margin-bottom: 35px;
+
+  text-align: left;
+  color: #fff;
+}
+
+
+.promo-inner__text {
+  margin-bottom: 45px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  font-family: $ff-main;
+  color: #fff;
+  font-style: normal;
+}
+
+.promo-inner__subscribe {
+  margin-bottom: 35px;
+}
+
+.promo-inner__comment {
+  position: relative;
+
+  padding-left: 20px;
+
+  font-weight: 600;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: #fff;
+  font-style: normal;
+
+  &::after {
+    content: "*";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 10px;
+    height: 30px;
+
+    font-weight: 600;
+    font-size: 20px;
+    color: $c-green;
+  }
+}
+
+.promo-inner__container {
+  display: flex;
+}
+
+.promo-inner__wrap-img {
+  position: absolute;
+  top: -65px;
+  right: 0;
+
+  @media (max-width: $xl) {
+    right: -135px;
+  }
+
+  @media (max-width: $lg) {
+    right: -190px;
+  }
+
+  @media (max-width: $md) {
+    top: 0;
+  }
+
+  @media (max-width: $sm) {
+    top: 20%;
+    z-index: -1;
+  }
+
+  & img {
+    @media (max-width: $md) {
+      max-width: 460px;
+    }
+  }
+}
+
+.promo-inner__wrap-bc {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}

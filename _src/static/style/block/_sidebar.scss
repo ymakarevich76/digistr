@@ -1,0 +1,214 @@
+.sidebar {
+  max-height: 885px;
+
+  @media (max-width: $xl) {
+    max-height: 1015px;
+  }
+
+  @media (max-width: $lg) {
+    max-height: 1220px;
+  }
+
+  @media (max-width: $md) {
+    margin-bottom: 30px;
+  }
+}
+
+.sidebar__wrap-top {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $md) {
+    flex-direction: row;
+  }
+
+  @media (max-width: $sm) {
+    flex-wrap: wrap;
+  }
+}
+
+.sidebar__search {
+  margin-bottom: 10px;
+
+  @media (max-width: $md) {
+    width: 50%;
+    margin-right: 5px;
+  }
+
+  @media (max-width: $sm) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.sidebar__wrap-btn {
+  margin-bottom: 30px;
+
+  @media (max-width: $md) {
+    width: 50%;
+    margin-left: 5px;
+  }
+
+  @media (max-width: $sm) {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.sidebar__btn {
+  min-width: 100%;
+  padding-top: 20px;
+  padding-bottom: 17px;
+
+  font-size: $fz-secondary;
+
+  @media (max-width: $xl) {
+    min-width: 100%;
+  }
+
+  @media (max-width: $lg) {
+    font-size: $fz-main;
+  }
+
+  @media (max-width: $md) {
+    padding: 17px;
+  }
+}
+
+.sidebar__wrap-radio {
+  display: flex;
+  margin-bottom: 30px;
+
+  @media (max-width: $lg) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: $md) {
+    width: 100%;
+  }
+}
+
+.sidebar__radio {
+  display: inline-block;
+  margin-right: 0;
+
+  @media (max-width: $xl) {
+    width: 100%;
+  }
+
+  @media (max-width: $md) {
+    width: calc(100% / 3);
+  }
+}
+
+.sidebar__radio input[type=radio] {
+  display: none;
+}
+
+.sidebar__radio label {
+  display: inline-block;
+  min-width: 77px;
+  margin-bottom: 0;
+  padding: 14px 18px;
+
+  line-height: 1.2;
+  text-align: center;
+
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  cursor: pointer;
+
+  user-select: none;
+
+  @media (max-width: $xl) {
+    width: 100%;
+    min-width: auto;
+    padding: 14px 10px;
+  }
+
+  @media (max-width: $lg) {
+    margin-bottom: 10px;
+  }
+}
+
+.sidebar__wrap-radio .sidebar__radio:first-child label {
+  border-radius: 6px 0 0 6px;
+
+  @media (max-width: $xl) {
+    width: 100%;
+  }
+
+  @media (max-width: $lg) {
+    border-radius: 6px;
+  }
+
+
+  @media (max-width: $md) {
+    border-radius: 6px 0 0 6px;
+  }
+}
+
+.sidebar__wrap-radio .sidebar__radio:last-child label {
+  border-radius: 0 6px 6px 0;
+
+  @media (max-width: $xl) {
+    width: 100%;
+    min-width: auto;
+  }
+
+  @media (max-width: $lg) {
+    border-radius: 6px;
+  }
+
+  @media (max-width: $md) {
+    border-radius: 0 6px 6px 0;
+  }
+}
+
+.sidebar__wrap-radio .sidebar__radio:nth-child(2) label {
+  @media (max-width: $xl) {
+    min-width: auto;
+  }
+
+  @media (max-width: $lg) {
+    border-radius: 6px;
+  }
+
+  @media (max-width: $md) {
+    border-radius: 0;
+  }
+}
+
+/* Checked */
+.sidebar__radio input[type=radio]:checked + label {
+  color: #fff;
+
+  background: $c-purple;
+}
+
+/* Hover */
+.sidebar__radio label:hover {
+  color: #666;
+}
+
+/* Disabled */
+.sidebar__radio input[type=radio]:disabled + label {
+  color: #666;
+
+  background: #efefef;
+}
+
+.sidebar__title {
+  margin-bottom: 25px;
+
+  font-weight: 600;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  font-style: normal;
+}
+
+
+.sidebar__checkbox-item {
+  margin-bottom: 10px;
+}

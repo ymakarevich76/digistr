@@ -1,2 +1,71 @@
 .btn {
+  display: block;
+  min-width: 95px;
+  padding: 12px 10px;
+
+  font-weight: 500;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  text-align: center;
+  color: #fff;
+  font-style: normal;
+
+  background-color: $c-green;
+  border-radius: 6px;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &--blue {
+    background-color: $c-purple;
+  }
+}
+
+.btn-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.btn-prev,
+.btn-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 68px;
+  height: 68px;
+
+  background: #fbfbfb;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(50, 50, 93, .1);
+
+
+  & svg {
+    width: 16px;
+    height: 20px;
+
+    fill: $c-green;
+
+    @media (max-width: $md) {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  @media (max-width: $md) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (max-width: $sm) {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.btn-prev svg {
+  transform: rotate(-180deg);
 }

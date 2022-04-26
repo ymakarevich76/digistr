@@ -1,0 +1,60 @@
+.tooltip {
+  position: absolute;
+
+  display: block;
+  width: 356px;
+  padding: 15px;
+
+  border-radius: 5px;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    display: block;
+    margin-left: -75px;
+
+    border-width: 15px;
+    border-style: solid;
+    border-radius: 6px;
+    transform: rotate(-60deg);
+  }
+
+  @media (max-width: $md) {
+    width: auto;
+    max-width: 250px;
+  }
+}
+
+.tooltip__text {
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  font-family: $ff-main;
+  text-align: left;
+  color: #fff;
+  font-style: normal;
+}
+
+.tippy-box[data-theme~="tomato"] {
+  color: #fff;
+
+  background-color: #e43e30;
+}
+
+.tippy-box[data-theme~="tomato"][data-placement^="top"] > .tippy-arrow::before {
+  border-top-color: #e43e30;
+}
+
+.tippy-box[data-theme~="tomato"][data-placement^="bottom"] > .tippy-arrow::before {
+  border-bottom-color: #e43e30;
+}
+
+.tippy-box[data-theme~="tomato"][data-placement^="left"] > .tippy-arrow::before {
+  border-left-color: #e43e30;
+}
+
+.tippy-box[data-theme~="tomato"][data-placement^="right"] > .tippy-arrow::before {
+  border-right-color: #e43e30;
+}

@@ -1,0 +1,40 @@
+.social {
+  display: flex;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+
+  background-color: #078344;
+  border-radius: 50%;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  & svg {
+    width: 23px;
+    height: 23px;
+
+    fill: $c-accent;
+
+    @media (max-width: $sm) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &:hover svg {
+    fill: $c-green;
+  }
+
+  @media (max-width: $sm) {
+    width: 40px;
+    height: 40px;
+  }
+}
+

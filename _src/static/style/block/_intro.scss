@@ -1,0 +1,110 @@
+.intro {
+  padding-top: 80px;
+  padding-bottom: 75px;
+
+  background: url("../img/bc/intro-bc.png") no-repeat;
+  background-position: top right;
+  background-size: 80%;
+
+  @media (max-width: $md) {
+    padding-bottom: 50px;
+  }
+}
+
+.intro__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro__content {
+  width: 45%;
+  padding-top: 47px;
+
+  @media (max-width: $xl) {
+    width: 55%;
+  }
+
+  @media (max-width: $md) {
+    width: 100%;
+    padding-top: 70px;
+  }
+}
+
+.intro__title {
+  margin-bottom: 30px;
+}
+
+.intro__text-accent {
+  margin-bottom: 35px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-accent;
+  font-style: normal;
+
+  @media (max-width: $md) {
+    font-size: 20px;
+  }
+}
+
+.intro__subscribe {
+  margin-bottom: 35px;
+}
+
+.intro__wrap-img {
+  width: calc(55% - 45px);
+  margin-left: 45px;
+
+  @media (max-width: $xl) {
+    width: calc(45% - 45px);
+  }
+
+  @media (max-width: $lg) {
+    align-self: center;
+    width: 45%;
+    margin-left: 0;
+  }
+
+  @media (max-width: $md) {
+    display: none;
+  }
+}
+
+.intro__wrap-text {
+  position: relative;
+
+  padding-left: 20px;
+
+  &::after {
+    content: "*";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 10px;
+    height: 30px;
+
+    font-weight: 600;
+    font-size: 20px;
+    color: $c-green;
+  }
+}
+
+.intro__text {
+  margin-bottom: 15px;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-main;
+  font-style: normal;
+
+  &--bold {
+    font-weight: 600;
+  }
+}
+

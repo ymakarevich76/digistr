@@ -1,0 +1,33 @@
+.promo {
+  padding: 53px 0;
+
+  background-color: $c-green;
+}
+
+
+.promo__container {
+  max-width: 654px;
+}
+
+.promo__title {
+  margin-bottom: 35px;
+
+  color: #fff;
+}
+
+.promo__wrap-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.promo__btn {
+  min-width: 214px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  font-size: $fz-secondary;
+
+  background-color: $c-purple;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .08), 0 4px 6px rgba(50, 50, 93, .1);
+}

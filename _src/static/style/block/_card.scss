@@ -1,0 +1,27 @@
+.card__info {
+  & span {
+    font-weight: 500;
+    font-size: $fz-secondary;
+    line-height: 1.2;
+    font-family: $ff-main;
+    font-style: normal;
+    letter-spacing: -.015em;
+  }
+}
+
+.card__cost {
+  color: $c-purple;
+
+  &--free {
+    color: $c-green;
+  }
+}
+
+.card__sep {
+  color: #e5e5e5;
+}
+
+
+.card__wrap-img {
+  margin-bottom: 20px;
+}

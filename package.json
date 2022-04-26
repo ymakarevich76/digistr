@@ -25,6 +25,9 @@
     "gulp-uglify": "^3.0.2"
   },
   "dependencies": {
-    "bootstrap": "^4.6.0"
+    "@popperjs/core": "^2.11.5",
+    "bootstrap": "^4.6.0",
+    "swiper": "^8.1.4",
+    "tippy.js": "^6.3.7"
   }
 }

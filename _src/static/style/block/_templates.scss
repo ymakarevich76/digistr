@@ -1,0 +1,173 @@
+.templates {
+  position: relative;
+
+  padding: 85px 0 100px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    display: block;
+    width: 100%;
+    height: 474px;
+
+    background-color: $c-green;
+
+    @media (max-width: $md) {
+      height: 45%;
+    }
+  }
+
+  @media (max-width: $lg) {
+    padding: 65px 0 65px;
+  }
+
+  @media (max-width: $md) {
+    padding: 50px 0 50px;
+  }
+}
+
+
+.templates__title {
+  margin-bottom: 85px;
+
+  color: #fff;
+
+  @media (max-width: $md) {
+    margin-bottom: 50px;
+  }
+}
+
+.templates__slider {
+  margin-bottom: 45px;
+
+  @media (max-width: $sm) {
+    max-width: 240px;
+  }
+}
+
+.templates__slide {
+  width: 356px;
+
+  opacity: .4;
+
+  & .blackout__content-btn {
+    cursor: default;
+
+    pointer-events: none;
+  }
+
+  &.swiper-slide-prev,
+  &.swiper-slide-next,
+  &.swiper-slide-active {
+    opacity: 1;
+
+    & .blackout__content-btn {
+      cursor: pointer;
+
+      pointer-events: all;
+    }
+  }
+
+  @media (max-width: $md) {
+    width: auto;
+  }
+}
+
+.templates__wrap-img {
+  width: 100%;
+}
+
+.templates__slider-box-btn {
+  position: absolute;
+  top: 43.5%;
+  z-index: 10;
+
+  width: 100%;
+
+  pointer-events: none;
+}
+
+.templates__slider-btn-prev,
+.templates__slider-btn-next {
+  pointer-events: visible;
+
+  @media (max-width: $md) {
+    background-color: $c-green;
+  }
+
+  @media (max-width: $sm) {
+    background-color: #fff;
+  }
+
+  & svg {
+    @media (max-width: $md) {
+      fill: #fff;
+    }
+
+    @media (max-width: $sm) {
+      fill: $c-green;
+    }
+  }
+}
+
+.templates__slider-btn-prev {
+  margin-left: 90px;
+
+  @media (max-width: $md) {
+    margin-left: 10px;
+  }
+}
+
+.templates__slider-btn-next {
+  margin-right: 90px;
+
+  @media (max-width: $md) {
+    margin-right: 10px;
+  }
+}
+
+.templates__wrap-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 522px;
+  margin: 0 auto;
+
+  @media (max-width: $sm) {
+    justify-content: center;
+  }
+}
+
+.templates__link {
+  margin-bottom: 45px;
+
+  font-weight: 500;
+  font-size: $fz-secondary;
+  line-height: 1;
+  font-family: $ff-main;
+  color: $c-accent;
+
+  border-bottom: 1px solid $c-accent;
+
+  &:hover {
+    color: $c-green;
+    text-decoration: none;
+
+    border-color: $c-green;
+  }
+}
+
+.templates__btn {
+  min-width: 215px;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  font-size: $fz-secondary;
+  letter-spacing: -.015em;
+}
+

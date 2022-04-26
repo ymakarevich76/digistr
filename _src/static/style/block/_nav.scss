@@ -1,0 +1,57 @@
+.nav {
+}
+
+.nav__list {
+  display: flex;
+
+  .header__nav & {
+    justify-content: space-between;
+    min-width: 570px;
+
+    @media (max-width: $xl) {
+      width: 100%;
+      min-width: auto;
+    }
+
+    @media (max-width: $lg) {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+}
+
+.nav__item {
+  position: relative;
+
+
+  .header__nav & {
+    @media (max-width: $lg) {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.nav__link {
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-main;
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
+
+  .header__nav & svg {
+    width: 12px;
+    height: 12px;
+
+    fill: $c-secondary;
+  }
+}
+
+
+
+.nav__icon {
+}

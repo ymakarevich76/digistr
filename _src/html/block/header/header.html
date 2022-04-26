@@ -1,3 +1,56 @@
-<header class="header">
-  <div class="container">header</div>
+<header class="header @@background">
+  <div class="header__container container">
+    <a href="#" class="header__logo">
+      <img src="static/img/logo/logo-digistr.svg" alt="Логотип">
+    </a>
+    <nav class="header__nav nav">
+      <ul class="nav__list list-reset">
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <span>Создание магазина</span>
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#angle-down-solid"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="tariffs.html" class="nav__link">Тарифы и цены</a>
+          <div class="header__tooltip">
+            <p class="header__tooltip-text">Человеческие</p>
+          </div>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Примеры</a>
+          <div class="header__tooltip">
+            <p class="header__tooltip-text">Живые</p>
+          </div>
+        </li>
+        <li class="nav__item">
+          <a href="design.html" class="nav__link">Дизайн</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <span>Поддержка</span>
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#angle-down-solid"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <button type="button" class="header__nav-close btn-reset">
+      </button>
+    </nav>
+
+    <button type="button" class="header__nav-icon btn-reset">
+      <span></span>
+    </button>
+
+    <div class="header__info">
+      <a href="tel:+74952410586" class="header__phone" data-da=".header__container,768, first">+7 (495) 241-05-86</a>
+      <a href="#" class="header__accaunt-btn btn">Войти</a>
+      <a href="#" class="header__create-btn btn">Создать магазин</a>
+    </div>
+
+  </div>
 </header>
