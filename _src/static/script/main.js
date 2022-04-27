@@ -8,3 +8,4 @@
 @@include('block/__to-top.js')
 @@include('block/__name-template.js')
 @@include('block/__tabs.js')
+@@include('block/__table-show.js')

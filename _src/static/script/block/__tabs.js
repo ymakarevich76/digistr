@@ -28,9 +28,9 @@ function tabsWork(tabsSelector, tabsContainerSelector, tabsContentSelector, acti
   tabsContainer.addEventListener('click', (e) => {
     const target = e.target;
 
-    if (target && target.classList.contains(tabsSelector.slice(1))) {
+    if (target && (target.classList.contains(tabsSelector.replace(/\./, '')) || target.parentNode.classList.contains(tabsSelector.replace(/\./, '')))) {
       tabs.forEach((item, i) => {
-        if (item == target) {
+        if (target == item || target.parentNode == item) {
           hideTabsContent();
           showTabsContent(i);
         }
@@ -39,7 +39,10 @@ function tabsWork(tabsSelector, tabsContainerSelector, tabsContentSelector, acti
   })
 }
 
-// tabsWork('.product-tabs__item', '.product-tabs__items', '.product-tabs__content', 'active');
+if (document.querySelector('.product-tabs__item')) {
+  tabsWork('.product-tabs__item', '.product-tabs__items', '.product-tabs__content', 'active');
+}
 
-
-tabsWork('.tariffs-tabs__item', '.tariffs-tabs__items', '.tariffs-tabs__content', 'active');
+if (document.querySelector('.tariffs-tabs__item')) {
+  tabsWork('.tariffs-tabs__item', '.tariffs-tabs__items', '.tariffs-tabs__content', 'active');
+}

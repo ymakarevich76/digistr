@@ -1,0 +1,146 @@
+.tariffs-table {
+  width: 100%;
+  margin-bottom: 35px;
+
+  &.hide {
+    display: none;
+  }
+
+  @media (max-width: $md) {
+    margin-left: 1px;
+  }
+}
+
+.tariffs-table__row {
+  &--empty {
+    background-color: #fbfbfb;
+
+    & .tariffs-table__col {
+      font-weight: 700;
+      font-size: $fz-secondary;
+      line-height: 1.2;
+      font-family: $ff-main;
+      color: $c-main;
+      text-transform: uppercase;
+      font-style: normal;
+      letter-spacing: .0125em;
+    }
+  }
+
+  & th:first-child {
+    border-top: none;
+    border-left: none;
+  }
+
+  &:nth-child(5) .tariffs-table__cost {
+    font-weight: 400;
+  }
+}
+
+.tariffs-table__col {
+  min-width: 192px;
+  padding: 16px;
+
+  text-align: left;
+
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+
+  &:first-child {
+    width: 354px;
+  }
+
+  & svg {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+  }
+
+  &--blue {
+    background-color: #f3faff;
+
+    & .tariffs-table__title {
+      color: $c-accent;
+    }
+
+    & svg {
+      fill: $c-accent;
+    }
+  }
+
+  &--yellow {
+    background-color: #fefbf3;
+
+    & .tariffs-table__title {
+      color: $c-yellow;
+    }
+
+    & svg {
+      fill: $c-yellow;
+    }
+  }
+
+  &--purple {
+    background-color: #f7f8fe;
+
+    & .tariffs-table__title {
+      color: $c-purple;
+    }
+
+    & svg {
+      fill: $c-purple;
+    }
+  }
+
+  &--green {
+    background-color: #f3fbf7;
+
+    & .tariffs-table__title {
+      color: $c-green;
+    }
+
+    & svg {
+      fill: $c-green;
+    }
+  }
+
+  @media (max-width: $lg) {
+    min-width: 150px;
+  }
+}
+
+.tariffs-table__title {
+  font-weight: 500;
+  font-size: $fz-secondary;
+  line-height: 1.2;
+  font-family: $ff-main;
+  text-align: center;
+  font-style: normal;
+}
+
+.tariffs-table__text {
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 17px;
+  font-family: $ff-main;
+  color: $c-main;
+  font-style: normal;
+  letter-spacing: .0125em;
+}
+
+.tariffs-table__cost {
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-size: $fz-secondary;
+  line-height: 1.2;
+  font-family: $ff-main;
+  text-align: center;
+  font-style: normal;
+
+  & span {
+    font-weight: 400;
+    font-size: $fz-main;
+  }
+}

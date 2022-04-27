@@ -52,8 +52,10 @@
 @import "block/product-tabs";
 @import "block/similar";
 @import "block/tariffs";
+@import "block/faq";
+@import "block/tariffs-table";
 
 @import "block/footer/footer";
 
 // ///////////////////////////////////////// display
-// @import "base/display";
+@import "base/display";
