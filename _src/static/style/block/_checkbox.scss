@@ -12,6 +12,14 @@
   margin-bottom: 0;
   padding-left: 30px;
 
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 30px;
+  font-family: $ff-main;
+  font-style: normal;
+
+  cursor: pointer;
+
   user-select: none;
 
   & span {
@@ -44,5 +52,6 @@
 
 .checkbox:checked + label::before {
   background: url(../img/icon/checkbox.svg) no-repeat;
-  background-position: center center;
+ 
+ background-position: center center;
 }

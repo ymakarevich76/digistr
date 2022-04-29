@@ -1,0 +1,97 @@
+@@include('block/head.html')
+@@include('block/header/header.html', {
+"background": "header--bc",
+"link": "index.html"
+})
+
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+
+  <section class="modules">
+    <div class="container">
+      <h1 class="modules__title"><span>Магазин модулей </span>Digistr</h1>
+      <p class="modules__sub-title">Ваш бизнес уникален, найдите модуль, который идеально подойдет для вашего сайта</p>
+      <div class="modules__search search">
+        <input type="text" class="search__input" name="search" placeholder="Поиск">
+        <button type="submit" class="search__btn btn-reset">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modules__anchors">
+        <div class="modules__anchors-items">
+          <div class="modules__anchors-item">SEO и маркетинг</div>
+          <div class="modules__anchors-item">Скидки, бонусы и акции</div>
+          <div class="modules__anchors-item">Каталог товаров</div>
+          <div class="modules__anchors-item">Заказы</div>
+          <div class="modules__anchors-item">Покупатели</div>
+          <div class="modules__anchors-item">Содержание сайта</div>
+          <div class="modules__anchors-item">Сервисы и виджеты</div>
+        </div>
+
+        <div class="modules__content">
+          <p class="modules__content-title">SEO и маркетинг</p>
+          <p class="modules__content-subtitle">Модули, которые мы особенно рекомендуем</p>
+          <div class="modules__wrap-block">
+            <div class="modules__block">
+              <div class="modules__wrap-img">
+                <img src="static/img/seo/seo-1.png" alt="Фото">
+              </div>
+
+              <div class="modules__wrap-info">
+                <p class="modules__name">SEO-турбо</p>
+                <p class="modules__cost">72 <span>руб.</span></p>
+              </div>
+            </div>
+
+            <div class="modules__block">
+              <div class="modules__wrap-img">
+                <img src="static/img/seo/seo-2.png" alt="Фото">
+              </div>
+
+              <div class="modules__wrap-info">
+                <p class="modules__name">301 редиректы</p>
+                <p class="modules__cost">90 <span>руб.</span></p>
+              </div>
+            </div>
+
+            <div class="modules__block">
+              <div class="modules__wrap-img">
+                <img src="static/img/seo/seo-3.png" alt="Фото">
+              </div>
+
+              <div class="modules__wrap-info">
+                <p class="modules__name">SEO-перелинковка</p>
+                <p class="modules__cost">36 <span>руб.</span></p>
+              </div>
+            </div>
+
+            <div class="modules__block">
+              <div class="modules__wrap-img">
+                <img src="static/img/seo/seo-4.png" alt="Фото">
+              </div>
+
+              <div class="modules__wrap-info">
+                <p class="modules__name">Оповещение о забытой корзине</p>
+                <p class="modules__cost">108 <span>руб.</span></p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="modules__link">Посмотреть все
+            <svg aria-hidden="true">
+              <use xlink:href="static/img/symbol/sprite.svg#arrow-right-long"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/modal.html')
+@@include('block/scripts.html')

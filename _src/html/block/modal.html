@@ -1,0 +1,36 @@
+<div class="modal hide">
+  <div class="modal__dialog">
+    <div class="modal__content">
+      <form action="#" class="modal__form">
+        <div data-close class="modal__close">&times;</div>
+        <h2 class="modal__title"><span>Создание аккаунта</span>
+          интернет-магазина</h2>
+        <div class="modal__wrap-input">
+          <input placeholder="Адрес магазина" name="address" type="text" class="modal__input modal__input--sm">
+
+          <div class="modal__tooltip modal__tooltip--red tooltip">
+            <p class="tooltip__text">Свой домен можно добавить после регистрации</p>
+          </div>
+        </div>
+
+        <input required placeholder="Имя" name="name" type="text" class="modal__input">
+
+        <div class="modal__wrap-input">
+          <input required placeholder="E-mail" name="e-mail" type="email" class="modal__input">
+
+          <div class="modal__tooltip modal__tooltip--yellow tooltip">
+            <p class="tooltip__text">Пароли для магазина придут на этот e-mail</p>
+          </div>
+        </div>
+
+        <input placeholder="Промокод" name="promo" type="text" class="modal__input">
+
+        <div class="modal__wrap-checkbox">
+          <input type="checkbox" class="checkbox" id="agree" name="agree" checked required>
+          <label for="agree">Я соглашаюсь с <a href="#"> условиями сервиса</a></label>
+        </div>
+        <button type="submit" class="modal__btn btn btn-reset">Получить свой магазин</button>
+      </form>
+    </div>
+  </div>
+</div>

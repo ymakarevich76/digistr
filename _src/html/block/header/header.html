@@ -1,17 +1,34 @@
 <header class="header @@background">
   <div class="header__container container">
-    <a href="#" class="header__logo">
+    <a href="@@link" class="header__logo">
       <img src="static/img/logo/logo-digistr.svg" alt="Логотип">
     </a>
     <nav class="header__nav nav">
       <ul class="nav__list list-reset">
         <li class="nav__item">
-          <a href="#" class="nav__link">
+          <a href="store.html" class="nav__link">
             <span>Создание магазина</span>
             <svg aria-hidden="true">
               <use xlink:href="static/img/symbol/sprite.svg#angle-down-solid"></use>
             </svg>
           </a>
+          <ul class="nav__sub-menu sub-menu list-reset">
+            <li class="sub-menu__list">
+              <a href="#" class="sub-menu__link">Конструктор и движок</a>
+            </li>
+            <li class="sub-menu__list">
+              <a href="#" class="sub-menu__link">Магазины под ключ</a>
+            </li>
+            <li class="sub-menu__list">
+              <a href="#" class="sub-menu__link">Готовые магазины</a>
+            </li>
+            <li class="sub-menu__list">
+              <a href="modules.html" class="sub-menu__link">Модули</a>
+            </li>
+            <li class="sub-menu__list">
+              <a href="#" class="sub-menu__link">Интеграции</a>
+            </li>
+          </ul>
         </li>
         <li class="nav__item">
           <a href="tariffs.html" class="nav__link">Тарифы и цены</a>
@@ -49,7 +66,7 @@
     <div class="header__info">
       <a href="tel:+74952410586" class="header__phone" data-da=".header__container,768, first">+7 (495) 241-05-86</a>
       <a href="#" class="header__accaunt-btn btn">Войти</a>
-      <a href="#" class="header__create-btn btn">Создать магазин</a>
+      <a href="#" class="header__create-btn btn" data-modal>Создать магазин</a>
     </div>
 
   </div>

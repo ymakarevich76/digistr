@@ -9,3 +9,5 @@
 @@include('block/__name-template.js')
 @@include('block/__tabs.js')
 @@include('block/__table-show.js')
+@@include('block/__modal.js')
+@@include('block/__accordion-tab.js')

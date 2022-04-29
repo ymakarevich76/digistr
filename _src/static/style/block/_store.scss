@@ -1,0 +1,59 @@
+.store {
+  padding-top: 135px;
+  padding-bottom: 220px;
+
+  background: url("../img/bc/store-bc.png") repeat-x;
+  background-position-y: 60px;
+}
+
+.store__container {
+  @media (max-width: $md) {
+    max-width: 100%;
+  }
+}
+
+.store__title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+}
+
+.store__sub-title {
+  margin-bottom: 70px;
+
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  text-align: center;
+  color: $c-main;
+  font-style: normal;
+}
+
+.store__accordion {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 205px;
+
+    display: block;
+    width: 804px;
+    height: 339px;
+
+    background: url("../img/bc/line.png") no-repeat;
+    background-size: 100%;
+
+    @media (max-width: $xl) {
+      top: 35px;
+      left: 50px;
+    }
+
+    @media (max-width: $lg) {
+      display: none;
+    }
+  }
+}
+

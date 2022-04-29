@@ -1,0 +1,40 @@
+.sub-menu {
+  position: absolute;
+  top: 45px;
+  left: 0;
+
+  display: none;
+  min-width: 215px;
+  padding: 10px 20px;
+
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .08), 0 0 12px rgba(50, 50, 93, .1);
+
+  .nav__item:hover & {
+    display: block;
+  }
+}
+
+.sub-menu__list {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+
+.sub-menu__link {
+  font-weight: 400;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-main;
+  font-style: normal;
+
+  &:hover {
+    font-weight: 700;
+    color: $c-main;
+    text-decoration: none;
+  }
+}
+

@@ -49,13 +49,13 @@
   top: 138px;
   right: 217px;
 
-  background-color: #f1b70d;
+  background-color: $c-yellow;
 
   &::after {
     top: -5px;
     left: 35%;
 
-    border-color: transparent #f1b70d transparent transparent;
+    border-color: transparent $c-yellow transparent transparent;
   }
 
   @media (max-width: $md) {

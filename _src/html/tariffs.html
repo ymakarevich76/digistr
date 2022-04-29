@@ -1,6 +1,8 @@
 @@include('block/head.html')
 @@include('block/header/header.html', {
-"background": "header--bc"})
+"background": "header--bc",
+"link": "index.html"
+})
 
 <main class="main">
   <!-- //////////////////////////////////////////////////////////  -->
@@ -228,10 +230,8 @@
         </table>
       </div>
 
-      <div class="tariffs__wrap-btn">
-        <button type="button" class="tariffs__btn btn btn-reset">
-          Бесплатный пробный период</button>
-      </div>
+      <a href="#" class="tariffs__btn btn">
+        Бесплатный пробный период</a>
     </div>
   </section>
 
@@ -370,4 +370,5 @@
 </main>
 
 @@include('block/footer/footer.html')
+@@include('block/modal.html')
 @@include('block/scripts.html')

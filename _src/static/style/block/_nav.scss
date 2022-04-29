@@ -23,6 +23,8 @@
 .nav__item {
   position: relative;
 
+  padding: 12px 0;
+
 
   .header__nav & {
     @media (max-width: $lg) {
@@ -39,8 +41,13 @@
   color: $c-main;
 
   &:hover {
-    color: $c-accent;
+    font-weight: 700;
+    color: $c-main;
     text-decoration: none;
+  }
+
+  &.active {
+    font-weight: 700;
   }
 
   .header__nav & svg {
@@ -50,6 +57,8 @@
     fill: $c-secondary;
   }
 }
+
+
 
 
 
