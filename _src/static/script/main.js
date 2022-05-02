@@ -11,3 +11,4 @@
 @@include('block/__table-show.js')
 @@include('block/__modal.js')
 @@include('block/__accordion-tab.js')
+@@include('block/__modules-show.js')

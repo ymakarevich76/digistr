@@ -33,8 +33,6 @@
 
   &:focus {
     outline: none;
-
-    fill: $c-accent;
   }
 
   &:focus svg {
@@ -55,9 +53,14 @@
   &:hover {
     fill: $c-accent;
   }
+
+  &:focus {
+    outline: none;
+
+    fill: $c-accent;
+  }
 }
 
-.search__input:focus .search__btn:focus svg {
+.search__input:focus svg {
   fill: $c-accent;
 }
-
