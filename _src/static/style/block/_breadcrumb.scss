@@ -1,9 +1,29 @@
 .breadcrumb {
   @extend .list-reset;
+
+  display: flex;
+  margin-bottom: 45px;
 }
 
 .breadcrumb__item {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: $ff-main;
+  color: $c-main;
+  font-style: normal;
+
+  & span {
+    padding: 0 5px;
+  }
 }
 
 .breadcrumb__link {
+  color: $c-main;
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
 }
+

@@ -1,0 +1,86 @@
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .08), 0 0 12px rgba(50, 50, 93, .1);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.block__wrap-img {
+  border-radius: 4px 4px 0 0;
+
+  & img {
+    width: 100%;
+    max-height: 108px;
+
+    border-radius: 4px 4px 0 0;
+
+    object-fit: cover;
+
+    @media (max-width: $md) {
+      min-height: 60px;
+      max-height: 100%;
+    }
+  }
+}
+
+.block__wrap-info {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 30px 18px;
+
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .08), 0 0 12px rgba(50, 50, 93, .1);
+
+  @media (max-width: $sm) {
+    padding: 20px 10px;
+  }
+}
+
+.block__name {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: $fz-secondary;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-purple;
+  font-style: normal;
+
+  @media (max-width: $sm) {
+    font-size: 13px;
+  }
+}
+
+.block__cost {
+  margin-top: auto;
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  font-family: $ff-main;
+  color: $c-main;
+  font-style: normal;
+
+  @media (max-width: $sm) {
+    font-size: 20px;
+  }
+
+  & span {
+    font-weight: 400;
+    font-size: $fz-main;
+  }
+}
+

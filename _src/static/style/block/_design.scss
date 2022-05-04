@@ -14,32 +14,29 @@
   }
 }
 
-.design__descr {
+.design__sub-title {
   max-width: 545px;
   margin: 0 auto;
   margin-bottom: 80px;
-
-  font-weight: 400;
-  font-size: $fz-main;
-  line-height: 1.2;
-  font-family: $ff-main;
-  text-align: center;
-  color: $c-main;
-  font-style: normal;
 
   @media (max-width: $md) {
     margin-bottom: 65px;
   }
 }
 
-.design__wrap-content {
-  width: calc(100% / 3 * 2 - 30px);
-  margin-left: 30px;
+.design__sidebar {
+  max-height: 1080px;
+
+  @media (max-width: $lg) {
+    max-height: 100%;
+  }
 
   @media (max-width: $md) {
-    width: 100%;
-    margin-left: 0;
+    margin-bottom: 30px;
   }
+}
+
+.design__wrap-content {
 }
 
 .design__content {

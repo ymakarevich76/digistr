@@ -18,7 +18,7 @@
 
 @import "block/header/header";
 @import "block/logo";
-// @import "block/breadcrumb";
+@import "block/breadcrumb";
 @import "block/title/title";
 
 @import "block/form/form";
@@ -57,9 +57,12 @@
 @import "block/modal";
 @import "block/store";
 @import "block/choose-template";
-@import "block/accordion";
+@import "block/store-accordion";
 @import "block/sub-menu";
 @import "block/modules";
+@import "block/seo";
+@import "block/accordion";
+@import "block/blocks";
 
 @import "block/footer/footer";
 

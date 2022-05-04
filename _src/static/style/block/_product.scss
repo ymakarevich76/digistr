@@ -30,11 +30,7 @@
 }
 
 .product__sub-title {
-  font-weight: 400;
-  font-size: $fz-main;
-  line-height: 1.2;
-  font-family: $ff-main;
-  color: $c-main;
+  text-align: left;
 
   & a {
     color: $c-accent;
@@ -244,3 +240,4 @@
     margin-right: -5px;
   }
 }
+

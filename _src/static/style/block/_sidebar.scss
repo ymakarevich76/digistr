@@ -1,17 +1,4 @@
 .sidebar {
-  max-height: 885px;
-
-  @media (max-width: $xl) {
-    max-height: 1015px;
-  }
-
-  @media (max-width: $lg) {
-    max-height: 1220px;
-  }
-
-  @media (max-width: $md) {
-    margin-bottom: 30px;
-  }
 }
 
 .sidebar__wrap-top {
@@ -38,6 +25,10 @@
   @media (max-width: $sm) {
     width: 100%;
     margin-right: 0;
+  }
+
+  & input {
+    min-width: 100%;
   }
 }
 
@@ -67,11 +58,18 @@
   }
 
   @media (max-width: $lg) {
+    padding-top: 14px;
+    padding-bottom: 14px;
+
     font-size: $fz-main;
   }
 
   @media (max-width: $md) {
     padding: 17px;
+  }
+
+  @media (max-width: $sm) {
+    padding: 14px;
   }
 }
 
@@ -99,6 +97,10 @@
   @media (max-width: $md) {
     width: calc(100% / 3);
   }
+
+  @media (max-width: $xs) {
+    width: 100%;
+  }
 }
 
 .sidebar__radio input[type=radio] {
@@ -107,7 +109,7 @@
 
 .sidebar__radio label {
   display: inline-block;
-  min-width: 77px;
+  min-width: 75px;
   margin-bottom: 0;
   padding: 14px 18px;
 
@@ -142,13 +144,18 @@
     border-radius: 6px;
   }
 
-
   @media (max-width: $md) {
     border-radius: 6px 0 0 6px;
+  }
+
+  @media (max-width: $xs) {
+    border-radius: 6px;
   }
 }
 
 .sidebar__wrap-radio .sidebar__radio:last-child label {
+  min-width: 135px;
+
   border-radius: 0 6px 6px 0;
 
   @media (max-width: $xl) {
@@ -163,6 +170,10 @@
   @media (max-width: $md) {
     border-radius: 0 6px 6px 0;
   }
+
+  @media (max-width: $xs) {
+    border-radius: 6px;
+  }
 }
 
 .sidebar__wrap-radio .sidebar__radio:nth-child(2) label {
@@ -176,6 +187,10 @@
 
   @media (max-width: $md) {
     border-radius: 0;
+  }
+
+  @media (max-width: $xs) {
+    border-radius: 6px;
   }
 }
 
@@ -208,7 +223,25 @@
   font-style: normal;
 }
 
-
 .sidebar__checkbox-item {
   margin-bottom: 10px;
+}
+
+.sidebar__list {
+  padding-right: 15px;
+  padding-left: 30px;
+}
+
+.sidebar__item {
+  margin-bottom: 15px;
+}
+
+.sidebar__link {
+  color: $c-main;
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: underline;
+ 
+ }
 }

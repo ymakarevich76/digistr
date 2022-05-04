@@ -33,7 +33,7 @@
   content: "";
   position: absolute;
   // top: 50%;
-  top: 0;
+  top: 5px;
   left: 0;
 
   display: inline-block;
@@ -52,6 +52,6 @@
 
 .checkbox:checked + label::before {
   background: url(../img/icon/checkbox.svg) no-repeat;
- 
- background-position: center center;
+  background-position: center center;
 }
+

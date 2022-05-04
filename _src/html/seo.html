@@ -1,0 +1,250 @@
+@@include('block/head.html')
+@@include('block/header/header.html', {
+"background": "header--bc",
+"link": "index.html"
+})
+
+<main class="main">
+  <!-- //////////////////////////////////////////////////////////  -->
+
+  <section class="seo">
+    <div class="container">
+      <h1 class="seo__title">SEO и маркетинг</h1>
+      <p class="seo__sub-title title-sub">Ваш бизнес уникален, найдите модуль, который идеально подойдет для вашего
+        сайта</p>
+
+      @@include('block/breadcrumb.html')
+
+      <div class="seo__main-box main-box">
+        <aside class="seo__sidebar main-box__sidebar sidebar">
+          <form action="#" class="sidebar__form">
+
+            <div class="sidebar__wrap-top">
+              <div class="sidebar__search search">
+                <input type="text" class="search__input" name="search" placeholder="Поиск">
+                <button type="submit" class="search__btn btn-reset">
+                  <svg aria-hidden="true">
+                    <use xlink:href="static/img/symbol/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="sidebar__wrap-btn">
+                <button type="button" class="sidebar__btn btn btn-reset">Очистить фильтр</button>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <div class="accordion__block">
+                <div class="accordion__item">Статус модуля
+                </div>
+                <div class="accordion__content">
+                  <ul class="sidebar__checkbox-list list-reset">
+                    <li class="sidebar__checkbox-item">
+                      <input type="checkbox" class="checkbox" id="recommend" name="recommend" value="yes">
+                      <label for="recommend">Рекомендуем<span>(20)</span></label>
+                    </li>
+                    <li class="sidebar__checkbox-item">
+                      <input type="checkbox" class="checkbox" id="news" name="news" value="yes">
+                      <label for="news">Новинка<span>(2)</span></label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="accordion__block">
+                <div class="accordion__item">Платность модуля</div>
+                <div class="accordion__content">
+                  <ul class="sidebar__checkbox-list list-reset">
+                    <li class="sidebar__checkbox-item">
+                      <input type="checkbox" class="checkbox" id="paid" name="paid" value="yes">
+                      <label for="paid">Платный<span>(32)</span></label>
+                    </li>
+                    <li class="sidebar__checkbox-item">
+                      <input type="checkbox" class="checkbox" id="free" name="free" value="yes">
+                      <label for="free">Бесплатный<span>(12)</span></label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="accordion__block">
+                <div class="accordion__item">SEO и маркетинг</div>
+                <div class="accordion__content">
+                </div>
+              </div>
+
+              <div class="accordion__block">
+                <div class="accordion__item">Скидки, бонусы и акции</div>
+                <div class="accordion__content">
+                </div>
+              </div>
+
+              <div class="accordion__block">
+                <div class="accordion__item">Сервисы и виджеты</div>
+                <div class="accordion__content">
+                </div>
+              </div>
+
+              <div class="accordion__block">
+                <div class="accordion__item">Заказы</div>
+                <div class="accordion__content">
+                </div>
+              </div>
+
+              <div class="accordion__block">
+                <div class="accordion__item">Покупатели</div>
+                <div class="accordion__content">
+                </div>
+              </div>
+
+              <div class="accordion__block">
+                <div class="accordion__item">Содержание сайта</div>
+                <div class="accordion__content">
+                </div>
+              </div>
+
+              <div class="accordion__block">
+                <div class="accordion__item">Каталог товаров</div>
+                <div class="accordion__content">
+                  <ul class="sidebar__list list-reset">
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Рейтинг товаров</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Счетчик просмотров</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Сопутствующие товары по категориям</a>
+                    </li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Предыдущий/Следующий товары</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Умный фильтр</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">История просмотров</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Зависимые модификации (SKU)</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Сравнение товаров</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Быстрый просмотр</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Новые категории каталога</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Консультанты интернет-магазина</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Витрина для посетителей</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </form>
+        </aside>
+        <div class="main-box__content seo__content">
+          <div class="seo__wrap-block blocks">
+            <a href="#" class="seo__block block">
+              <div class="block__wrap-img">
+                <img src="static/img/modules/seo/seo-1.png" alt="Фото">
+              </div>
+
+              <div class="block__wrap-info">
+                <p class="block__name">SEO-турбо</p>
+                <p class="block__cost">72 <span>руб.</span></p>
+              </div>
+            </a>
+
+            <a href="#" class="seo__block block">
+              <div class="block__wrap-img">
+                <img src="static/img/modules/seo/seo-2.png" alt="Фото">
+              </div>
+
+              <div class="block__wrap-info">
+                <p class="block__name">301 редиректы</p>
+                <p class="block__cost">90 <span>руб.</span></p>
+              </div>
+            </a>
+
+            <a href="#" class="seo__block block">
+              <div class="block__wrap-img">
+                <img src="static/img/modules/seo/seo-3.png" alt="Фото">
+              </div>
+
+              <div class="block__wrap-info">
+                <p class="block__name">SEO-перелинковка</p>
+                <p class="block__cost">36 <span>руб.</span></p>
+              </div>
+            </a>
+
+            <a href="#" class="seo__block block">
+              <div class="block__wrap-img">
+                <img src="static/img/modules/seo/seo-4.png" alt="Фото">
+              </div>
+
+              <div class="block__wrap-info">
+                <p class="block__name">Оповещение о забытой корзине</p>
+                <p class="block__cost">108 <span>руб.</span></p>
+              </div>
+            </a>
+
+            <a href="#" class="seo__block block">
+              <div class="block__wrap-img">
+                <img src="static/img/modules/seo/seo-5.png" alt="Фото">
+              </div>
+
+              <div class="block__wrap-info">
+                <p class="block__name">Список желаний (WishList)
+                </p>
+                <p class="block__cost">36 <span>руб.</span></p>
+              </div>
+            </a>
+
+            <a href="#" class="seo__block block">
+              <div class="block__wrap-img">
+                <img src="static/img/modules/seo/seo-6.png" alt="Фото">
+              </div>
+
+              <div class="block__wrap-info">
+                <p class="block__name">Уведомить о снижении цены</p>
+                <p class="block__cost">72 <span>руб.</span></p>
+              </div>
+            </a>
+
+            <a href="#" class="seo__block block">
+              <div class="block__wrap-img">
+                <img src="static/img/modules/seo/seo-7.png" alt="Фото">
+              </div>
+
+              <div class="block__wrap-info">
+                <p class="block__name">Upsale Monster</p>
+                <p class="block__cost">144 <span>руб.</span></p>
+              </div>
+            </a>
+
+            <a href="#" class="seo__block block">
+              <div class="block__wrap-img">
+                <img src="static/img/modules/seo/seo-8.png" alt="Фото">
+              </div>
+
+              <div class="block__wrap-info">
+                <p class="block__name">Закажите еще для бесплатной доставки</p>
+                <p class="block__cost">54 <span>руб.</span></p>
+              </div>
+            </a>
+
+            <a href="#" class="seo__block block">
+              <div class="block__wrap-img">
+                <img src="static/img/modules/seo/seo-9.png" alt="Фото">
+              </div>
+
+              <div class="block__wrap-info">
+                <p class="block__name">я</p>
+                <p class="block__cost">144 <span>руб.</span></p>
+              </div>
+            </a>
+
+            <a href="#" class="seo__block block">
+              <div class="block__wrap-img">
+                <img src="static/img/modules/seo/seo-10.png" alt="Фото">
+              </div>
+
+              <div class="block__wrap-info">
+                <p class="block__name">SEO страница</p>
+                <p class="block__cost">144 <span>руб.</span></p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/modal.html')
+@@include('block/scripts.html')
