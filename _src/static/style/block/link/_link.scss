@@ -1,2 +1,33 @@
 .link {
+  position: relative;
+
+  padding-right: 20px;
+
+  font-weight: 400;
+  font-size: $fz-secondary;
+  line-height: 1.2;
+  font-family: $ff-main;
+  text-align: right;
+  color: $c-accent;
+  font-style: normal;
+
+  text-decoration-line: underline;
+
+  &:hover {
+    color: $c-accent;
+  }
+
+  & svg {
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    width: 15px;
+    height: 15px;
+
+    transform: translate(0, -50%);
+
+    fill: $c-accent;
+ 
+ }
 }

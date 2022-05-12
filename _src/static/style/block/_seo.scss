@@ -16,9 +16,6 @@
 }
 
 .seo__sidebar {
-  min-height: 1280px;
-  max-height: 100%;
-
   & .search__input {
     min-width: 100%;
   }
@@ -34,10 +31,6 @@
 
 .seo__wrap-block {
   margin: 0 -13px 30px !important;
-
-  @media (max-width: $sm) {
-    margin: 0 -5px 15px !important;
-  }
 }
 
 .seo__block {
@@ -46,5 +39,6 @@
 
   &:hover {
     text-decoration: none;
-  }
+ 
+ }
 }

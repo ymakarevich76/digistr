@@ -1,0 +1,71 @@
+.text-page {
+  padding-top: 80px;
+  padding-bottom: 70px;
+
+  background: url("../img/bc/text-page-bc.png") repeat-x;
+  background-position-y: -30px;
+  background-size: cover;
+
+  @media (max-width: $lg) {
+    padding-bottom: 30px;
+
+    background-position-y: 0;
+  }
+}
+
+.text-page__intro {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-page__content {
+  width: 45%;
+  padding-top: 47px;
+
+  @media (max-width: $xl) {
+    width: 55%;
+  }
+
+  @media (max-width: $md) {
+    width: 100%;
+    padding-top: 70px;
+  }
+}
+
+.text-page__title {
+  margin-bottom: 30px;
+}
+
+.text-page__wrap-img {
+  display: flex;
+  justify-content: flex-end;
+  width: calc(55% - 45px);
+  margin-top: 45px;
+  margin-left: 45px;
+
+  @media (max-width: $xl) {
+    width: calc(45% - 45px);
+  }
+
+  @media (max-width: $lg) {
+    align-self: center;
+    width: 45%;
+    margin-left: 0;
+  }
+
+  @media (max-width: $md) {
+    display: none;
+  }
+}
+
+.text-page__text {
+  margin-bottom: 15px;
+
+  font-weight: 400;
+  font-size: $fz-secondary;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-main;
+ 
+ font-style: normal;
+}

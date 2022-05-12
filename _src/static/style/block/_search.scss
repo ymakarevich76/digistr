@@ -4,10 +4,10 @@
 
 .search__input {
   min-width: 100%;
+  padding-right: 50px;
 
   @media (max-width: $xl) {
-    min-width: auto;
-    max-width: 100%;
+    width: 100%;
   }
 
   @media (max-width: $lg) {
@@ -17,6 +17,7 @@
   @media (max-width: $md) {
     min-width: 100%;
     padding: 17px;
+    padding-right: 50px;
   }
 }
 
@@ -40,7 +41,7 @@
   }
 
   @media (max-width: $md) {
-    transform: translate(0, -100%);
+    transform: translate(0, -50%);
   }
 }
 
@@ -64,3 +65,4 @@
 .search__input:focus svg {
   fill: $c-accent;
 }
+

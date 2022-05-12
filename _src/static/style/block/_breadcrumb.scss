@@ -3,6 +3,10 @@
 
   display: flex;
   margin-bottom: 45px;
+
+  &--bc {
+    margin-bottom: 30px;
+  }
 }
 
 .breadcrumb__item {
@@ -16,6 +20,10 @@
   & span {
     padding: 0 5px;
   }
+
+  .breadcrumb--bc & {
+    color: #fff;
+  }
 }
 
 .breadcrumb__link {
@@ -24,6 +32,10 @@
   &:hover {
     color: $c-accent;
     text-decoration: none;
+  }
+
+  .breadcrumb--bc & {
+    color: #fff;
   }
 }
 

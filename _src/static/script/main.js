@@ -12,3 +12,4 @@
 @@include('block/__modal.js')
 @@include('block/__accordion-tab.js')
 @@include('block/__modules-show.js')
+@@include('block/__rating.js')

@@ -1,0 +1,34 @@
+.also {
+  margin-bottom: 105px;
+
+  @media (max-width: $md) {
+    margin-bottom: 55px;
+  }
+}
+
+.also__title {
+  font-weight: 400;
+  text-align: left;
+}
+
+.also__sub-title {
+  margin-bottom: 60px;
+
+  font-size: $fz-secondary;
+  text-align: left;
+}
+
+.also__wrap-block {
+  margin: 0 -13px !important;
+}
+
+
+.also__block {
+  width: calc(100% / 4 - 26px);
+  margin: 0 13px;
+
+  @media (max-width: $xl) {
+    width: calc(100% / 2 - 26px);
+    margin-bottom: 13px;
+  }
+}

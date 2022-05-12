@@ -6,7 +6,7 @@
 .tariffs__title {
   margin-bottom: 50px;
 
-  font-weight: 700;
+  text-align: center;
 }
 
 .tariffs__sub-title {
@@ -55,12 +55,8 @@
   margin-bottom: 30px;
 
   font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-  font-family: $ff-main;
   text-align: center;
   color: $c-accent;
-  font-style: normal;
 
   .tariffs__block:nth-child(2) & {
     color: $c-yellow;
@@ -158,3 +154,4 @@
     overflow-x: auto;
   }
 }
+

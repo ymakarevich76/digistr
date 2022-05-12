@@ -15,14 +15,14 @@
 .main-box__sidebar {
   // width: calc(100% / 3);
   width: 356px;
-  padding: 20px;
+  // padding: 20px;
 
-  background: #fff;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, .08), 0 0 20px rgba(8, 175, 90, .2);
+  // background: #fff;
+  // border-radius: 4px;
+  // box-shadow: 0 1px 3px rgba(0, 0, 0, .08), 0 0 20px rgba(8, 175, 90, .2);
 
   @media (max-width: $xl) {
-    padding: 15px;
+    // padding: 15px;
   }
 
   @media (max-width: $lg) {
@@ -44,4 +44,3 @@
     margin-left: 0;
   }
 }
-
