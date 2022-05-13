@@ -50,6 +50,7 @@
 
 .block__name {
   margin-bottom: 20px;
+  overflow: hidden;
 
   font-weight: 700;
   font-size: $fz-secondary;
@@ -57,6 +58,8 @@
   font-family: $ff-main;
   color: $c-purple;
   font-style: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 
   @media (max-width: $sm) {
     font-size: 13px;

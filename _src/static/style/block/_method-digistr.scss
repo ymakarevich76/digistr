@@ -70,5 +70,9 @@
   font-family: $ff-main;
   color: $c-main;
   font-style: normal;
+
+  @media (max-width: $md) {
+    font-size: $fz-main;
+  }
 }
 

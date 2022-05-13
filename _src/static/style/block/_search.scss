@@ -41,6 +41,10 @@
   }
 
   @media (max-width: $md) {
+    transform: translate(0, -100%);
+  }
+
+  @media (max-width: $sm) {
     transform: translate(0, -50%);
   }
 }

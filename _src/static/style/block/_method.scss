@@ -47,6 +47,11 @@
   color: $c-main;
   font-style: normal;
 
+
+  @media (max-width: $md) {
+    font-size: $fz-main;
+  }
+
   &--accent {
     font-weight: 600;
     font-size: 24px;

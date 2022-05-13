@@ -211,7 +211,9 @@
   padding: 15px;
 
   background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .08), 0 0 12px rgba(50, 50, 93, .1);
 }
+
 
 .store-accordion__tab input:checked + .store-accordion__tab-title {
   color: #fff;

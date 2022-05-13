@@ -6,6 +6,14 @@
     font-family: $ff-main;
     font-style: normal;
     letter-spacing: -.015em;
+
+    @media (max-width: $lg) {
+      font-size: 15px;
+    }
+
+    @media (max-width: $md) {
+      font-size: $fz-secondary;
+    }
   }
 }
 
@@ -25,3 +33,4 @@
 .card__wrap-img {
   margin-bottom: 20px;
 }
+

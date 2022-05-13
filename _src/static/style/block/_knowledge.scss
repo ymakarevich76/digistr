@@ -19,6 +19,21 @@
 .knowledge__search {
   max-width: 545px;
   margin: 0 auto 50px;
+
+  & .search__input {
+    @media (max-width: $sm) {
+      overflow: hidden;
+
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  & .search__btn {
+    @media (max-width: $md) {
+      transform: translate(0, -50%);
+    }
+  }
 }
 
 .knowledge__wrap {
